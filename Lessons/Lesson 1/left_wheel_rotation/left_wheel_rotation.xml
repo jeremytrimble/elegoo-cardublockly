@@ -1,0 +1,189 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="84_v[Yy:H/NS:q#*t3#u" x="-27" y="32">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="arduino_functions" id="*ZS`haNMSKnxV@1sgS1g" x="-6" y="102">
+    <statement name="SETUP_FUNC">
+      <block type="io_digitalwrite" id="k*pRzSYSKNhB?@n/`|wo">
+        <field name="PIN">5</field>
+        <value name="STATE">
+          <block type="io_highlow" id="XsL*O//gALr%rOTu#nNg">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+        <next>
+          <block type="serial_print" id="CQqV|uD9_D_Lz^JT*_Q{">
+            <field name="SERIAL_ID">Serial</field>
+            <field name="NEW_LINE">TRUE</field>
+            <value name="CONTENT">
+              <block type="text" id="EC_}k6%h_Yll0eYvBXV+">
+                <field name="TEXT">Enable LEFT motor</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="LOOP_FUNC">
+      <block type="io_digitalwrite" id="D,6`4lCoVOv)=o:XAmY(">
+        <field name="PIN">7</field>
+        <value name="STATE">
+          <block type="io_highlow" id="DwPNB)yT*5.Ws]}sZD!7">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+        <next>
+          <block type="io_digitalwrite" id="4_tMkBu[f4:eLtUil^O1">
+            <field name="PIN">8</field>
+            <value name="STATE">
+              <block type="io_highlow" id="wGa,sy%F`d];/2]7aXry">
+                <field name="STATE">LOW</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="4V?~GKC5BM=dlj{@3vc%">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="text" id="*JT4.HNrRnJ?iHc5YUS@">
+                    <field name="TEXT">Left side turning forwards</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="f32ibo)+]U*nIQPmu?3Q">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="sCH0eqE/|7fFI|w-FP1s">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="io_digitalwrite" id="2r6KZ2eIy[%WsYGchfO^">
+                        <field name="PIN">7</field>
+                        <value name="STATE">
+                          <block type="io_highlow" id="iCXmFQ^mLxjw~*E`|SqK">
+                            <field name="STATE">LOW</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="io_digitalwrite" id="wJn+xBHTdZYD)(Yx:wa!">
+                            <field name="PIN">8</field>
+                            <value name="STATE">
+                              <block type="io_highlow" id="3G7it]!dYbq}D7F9ddRj">
+                                <field name="STATE">LOW</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="serial_print" id="mo?;bWp{w=7m0HWcm1p@">
+                                <field name="SERIAL_ID">Serial</field>
+                                <field name="NEW_LINE">TRUE</field>
+                                <value name="CONTENT">
+                                  <block type="text" id="k8bpQ{tW2^db5-H#ajwh">
+                                    <field name="TEXT">Left Wheel Stop</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="time_delay" id=".pl2FAk~*=4uG!4f3)Tr">
+                                    <value name="DELAY_TIME_MILI">
+                                      <block type="math_number" id="Z0tJwv3aN7U7B`XG:kC-">
+                                        <field name="NUM">1000</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="io_digitalwrite" id="`{;kr5kn3@1FCV;OW5^@">
+                                        <field name="PIN">7</field>
+                                        <value name="STATE">
+                                          <block type="io_highlow" id="~282Rj)Q^W]sj9jamN#L">
+                                            <field name="STATE">LOW</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="io_digitalwrite" id="]I3?Dsv:vb|~ApK%#.3m">
+                                            <field name="PIN">8</field>
+                                            <value name="STATE">
+                                              <block type="io_highlow" id="-mDv)b*4~mG?DWcqR=j@">
+                                                <field name="STATE">HIGH</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="serial_print" id="I+oY4[@Yua2B^NTf`v=B">
+                                                <field name="SERIAL_ID">Serial</field>
+                                                <field name="NEW_LINE">TRUE</field>
+                                                <value name="CONTENT">
+                                                  <block type="text" id=";L,i58=*R38f%+K.lFtj">
+                                                    <field name="TEXT">Left side turning backwards</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="time_delay" id="jbrGwoP1{rJYLyqYdnw[">
+                                                    <value name="DELAY_TIME_MILI">
+                                                      <block type="math_number" id="L!PFLx78(tZiIxZW9Z|E">
+                                                        <field name="NUM">1000</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="io_digitalwrite" id="!hr(SsaYy9JE-ZcuL~{[">
+                                                        <field name="PIN">7</field>
+                                                        <value name="STATE">
+                                                          <block type="io_highlow" id="S`Qk~:#[mt]/krhwL7mP">
+                                                            <field name="STATE">LOW</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="io_digitalwrite" id="S67HOjr.vx5iWcm!)-o)">
+                                                            <field name="PIN">8</field>
+                                                            <value name="STATE">
+                                                              <block type="io_highlow" id="UIMa%WVZ5w-FHSX_yU#E">
+                                                                <field name="STATE">LOW</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="serial_print" id="B;xSh=9n}.e%8s=ZT06.">
+                                                                <field name="SERIAL_ID">Serial</field>
+                                                                <field name="NEW_LINE">TRUE</field>
+                                                                <value name="CONTENT">
+                                                                  <block type="text" id="k8;8cnd[qn[IqIn1@DGZ">
+                                                                    <field name="TEXT">Left Wheel Stop</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="time_delay" id="fT84xDl-s9qVAP`lN:eQ">
+                                                                    <value name="DELAY_TIME_MILI">
+                                                                      <block type="math_number" id="o9Wzpo3#{:YPriEvAfeR">
+                                                                        <field name="NUM">1000</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
