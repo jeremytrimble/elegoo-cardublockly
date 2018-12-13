@@ -21,6 +21,7 @@ This repository contains a slimmed-down, English-only version of the official El
 
 # Usage
 To make full use of these examples, you'll need to download them to your desktop.  You can clone the repository but might be easier to download a zip file.  If you want to download a zip file, go to the GitHub page and click the **`Download Zip`** button.
+![Download a zip file](./Screen Shot 2018-12-12 at 1.54.49 PM.png)
 
 > This repository only contains a few clones of the Elegoo examples.  The point was not to re-create the entire library, but to provide some examples for getting started.
 
@@ -28,6 +29,7 @@ To make full use of these examples, you'll need to download them to your desktop
 1. Open the ArduBlockly IDE
 2. Click the **`Open`** button, in the top, right corner
  - _Alternatively, you can go to the `File > Open...` menu option._
+> ![Open the XML file you downloaded from this repository](./Screen Shot 2018-12-12 at 2.05.20 PM.png)
 3. Locate the XML document for the lesson.  For example, if you are on `Lesson 1 Make The Car Move` and want to find the `auto_go` example, look in the files you unzipped earlier.  Check the `Lesson 1` > `auto_go` folder for `auto_go.xml`.
 
 > **For example**
