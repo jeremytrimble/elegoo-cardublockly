@@ -2,11 +2,11 @@
 I uploaded this `elegoo-cardublockly` after trying to convert some of the Arduino examples for the Elegoo car kit into Blockly.  It's a format that my nephew is familiar with and might help introduce other coding concepts.
 
 # Setup
-In order to get these examples working in a familiar, [Blockly](https://code.google.com/blockly) format, install two applications.  One is the official Arduino application and another is an open-source, stand-alone application.  The latter is used to drag/drop the blockly elements, which depends on elements defined in the former.
+In order to get these examples working in a familiar, [Blockly](https://developers.google.com/blockly/) format, install two applications.  One is the official Arduino application and another is an open-source, stand-alone application.  The latter is used to drag/drop the blockly elements, which depends on elements defined in the former.
 
 ## Arduino IDE
 Download and install the latest Arduino IDE.
-You'll find links to download for your operating system [here]](https://www.arduino.cc/en/Main/Software)
+You'll find links to download for your operating system [here](https://www.arduino.cc/en/Main/Software)
 
 > If you are using **Windows**, be careful not to download the **Windows _App_**.  You'll probably want to use the first link in the downloads section.
 
@@ -32,11 +32,11 @@ To make full use of these examples, you'll need to download them to your desktop
 
 > **For example**
 > ```
-> // on Mac or Linux
+> // on Mac or Linux, it might be located at...
 >  ~/Documents/Arduino/elegoo-cardublockly/Lesson 1/auto_go/auto_go.xml
 >  
-> // on Windows
- My Documents\Arduino\elegoo-cardublockly\Lesson 1\auto_go\auto_go.xml
+> // on Windows, it might be located at...
+> My Documents\Arduino\elegoo-cardublockly\Lesson 1\auto_go\auto_go.xml
 > 
 > ```
 
