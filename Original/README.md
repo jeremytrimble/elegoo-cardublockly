@@ -1,0 +1,2 @@
+# Overview
+This directory contains parts of the original documents and source code from the manufacturer.  The origianl package can be downloaded from the [Elegoo Downloads Page](https://www.elegoo.com/download/).
